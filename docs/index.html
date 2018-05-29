@@ -1,0 +1,215 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Ramy Ashour</title>
+        <meta name="Ramy Ashour Offical website" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/aos.css">
+        <script src="js/main.js"></script>
+        <!--<script src="js/vendor/modernizr-2.8.3.min.js"></script>-->
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <script>
+
+        </script>
+        <div>
+        <div class="loader venter" id="loader">
+            <div>
+                <img src="img/loader.gif">
+                <p class="type"></p>
+            </div>
+        </div>
+        <script src="js/typed.min.js"></script>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
+        <script>
+            if(sessionStorage.getItem('check') === null){
+                document.getElementById('loader').style.display = 'flex';
+                var options = {
+                    strings: ["RAMY ASHOUR", "TAME THE GAME"],
+                    typeSpeed: 80,
+                    onComplete: function(self){
+                        document.getElementById('loader').classList.add('remove-loader');
+                        document.getElementById('loader').addEventListener('animationend', function () {
+                            document.getElementById('loader').style.display = 'none';
+//                            localStorage.setItem('check','done');
+                            sessionStorage.setItem('check','done');
+                        })
+                    }
+                };
+
+                var typed = new Typed(".type", options);
+            }
+        </script>
+        <header>
+                <div>
+                    <div class="navbar container">
+                        <a class="navbar-brand fl" href="index.html"><img src="img/logo_test.png" srcset="img/logo-medium.png 89w, img/logo-large.png 222w, img/logo-xl.png 266w"></a>
+                        <ul class="computer-nav fl">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                        <button type="button" id="menu-button" class="fr">
+                            <span class="menu" id="mobile-button1" >MENU</span>
+                        </button>
+                        <div class="clearfix"></div>
+                    </div>
+
+               </div>
+        </header>
+
+        <nav class="mobile-menu" id="mobile-m" style="display:none;">
+            <ul>
+                <li id="close_icon"><a href="#">&#10006;</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="squash.html">SQUASH</a></li>
+                <li><a href="music.html">MUSIC</a></li>
+                <li><a href="https://www.facebook.com/teamramyashouracademy/">ACADEMY</a></li>
+                <li><a href="contact-us.html">CONTACT-US</a></li>
+            </ul>
+        </nav>
+        <section class="hero venter" id="hero">
+            <article>
+                <h1 class="head">RAMY ASHOUR'S <br> WORLD</h1>
+                <a class="button" onclick="return slideDown()" id="explore">EXPLORE</a>
+                <h2 class="icon" data-aos="fade-up" data-aos-duration="ease">&#8681;</h2>
+            </article>
+        </section>
+        <div class="extender">
+            <div class="container">
+                <div id="intro-bg">
+                    <section class="intro">
+                        <p><b id="intro-letter">W</b>elcome to the official website for the Squash legend <b>Ramy Ashour, known as, The Artist.</b></p>
+                    </section>
+                    <section class="social" id="social2">
+                        <h2 class="head">LET'S CONNECT</h2>
+                        <div>
+                            <a class="social_icon" id="facebook" href="https://www.facebook.com/TeamRamyAshour/"></a>
+                            <a class="social_icon" id="twitter" href="https://twitter.com/RamyAshour?lang=en"></a>
+                            <a class="social_icon" id="instagram" href="https://www.instagram.com/ramyashourr/?hl=en"></a>
+                            <a class="social_icon" id="snapchat"></a>
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </section>
+                </div>
+                <div class="flex">
+                       <section class="squash venter">
+                           <div>
+                               <!--<img src="img/cc.png">-->
+                               <h2 class="title">SQUASH</h2>
+                               <p class="sub-title">IT ISN'T JUST A SPORT</p>
+                               <a href="#" class="learn_more_button">LEARN MORE</a>
+                           </div>
+                       </section>
+                       <section class="music venter">
+                           <div>
+                               <h2 class="title">MUSIC</h2>
+                               <p class="sub-title">HAS ALWAYS BEEN MY PASSION</p>
+                               <a href="music.html" class="learn_more_button">LEARN MORE</a>
+                           </div>
+                       </section>
+                       <div class="clearfix"></div>
+                </div>
+
+                <div class="academy-container">
+                    <section class="quote">
+                        <div>
+                        <h3><q>I truly believe that there is enough room in the world for everyone to be successful.</q></h3>
+                        </div>
+                    </section>
+                    <section class="academy venter">
+                        <div class="center">
+                            <h2 class="title">ACADEMY</h2>
+                            <p class="sub-title">KNOWLEDGE SHOULD ALWAYS BE PASSED IT ON</p>
+                            <a href="https://www.facebook.com/teamramyashouracademy/" class="learn_more_button">LEARN MORE</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+            <section class="sponsors">
+            <div class="sponsors_container">
+                <a href="#" class="sponsor_l card-fl" id="salming"></a>
+                <a href="#" class="sponsor_l card-fl" id="prince"></a>
+                <a href="#" class="sponsor_l card-fl" id="pharco"></a>
+            </div>
+        </section>
+        <section class="get_in_touch">
+            <h2>Get in Touch</h2>
+            <div class="card">
+                <form id="data-form" method="post" action="https://script.google.com/macros/s/AKfycbwQWt1EDY8BmFiSCkdG_LP-hpqKEJEL1qPJDqzbAwzYUQjsygc/exec">
+                    <textarea placeholder="Name" required name="name" ></textarea>
+                    <textarea placeholder="Email" required name="email"></textarea>
+                    <textarea id="message" placeholder="Message" required name="message"></textarea>
+                    <input type="submit" class="sub">
+                </form>
+            </div>
+            <div style="display:none;" id="thankyou_message">
+                <h2><em>Thanks</em> for contacting us!
+                    We will get back to you soon!</h2>
+            </div>
+            <div style="display:none;" id="email-invalid">
+                <h2>The email you entered is <em>Invalid</em>
+                    ,Please try again !</h2>
+            </div>
+        </section>
+        <footer>
+            <div class="list">
+                    <ul>
+                        <li><a href="squash.html">SQUASH</a></li>
+                        <li><a href="https://www.facebook.com/teamramyashouracademy/">ACADEMY</a></li>
+                        <li><a href="contact-us.html">CONTACT US</a></li>
+                    </ul>
+            </div>
+            <div class="list" id="last">
+                <ul>
+                    <li><a href="music.html">MUSIC</a></li>
+                    <li><a href="squash.html">ABOUT ME</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div>
+                <h3>FOLLOW ME</h3>
+                <a class="footer_icon" id="footer_icon1" href="https://www.instagram.com/ramyashourr/?hl=en"></a>
+                <a class="footer_icon" id="footer_icon2" href="https://twitter.com/RamyAshour?lang=en"></a>
+                <a class="footer_icon" id="footer_icon3" href="https://www.facebook.com/TeamRamyAshour/"></a>
+            </div>
+            <hr>
+            <div class="legal">
+                <h3 class="inline">&copy; 2017 Ramy Ashour</h3>
+                <h3 class="inline">designed by Ahmed Bayoumy</h3>
+            </div>
+            <div class="legal" id="top-button">
+                <h3 class="to_the_top_text">To the top</h3>
+                <a class="to_the_top" href="#hero"></a>
+            </div>
+        </footer>
+    </div>
+        <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>-->
+        <!--<script src="js/plugins.js"></script>-->
+        <script src="js/main.js"></script>
+        <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            -(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
