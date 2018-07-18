@@ -296,16 +296,14 @@ h1, h2{
     /*INTRO'
     ===========================================================*/
 .intro{
-    /* background-color: #3a3a3a; */
     overflow:  hidden;
-    /* border:  0; */
-    /* border-radius:  0; */
-    /* box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
-    /* border-color: transparent; */
 }
 .intro p {
     font-weight: 100;
+    color: #FFFFFF;
+    text-align: center;
     border:  0;
+    font-size: 1.5rem;
 }
 .intro #intro-letter{
     font-size: 3rem;
@@ -420,7 +418,7 @@ h1, h2{
     ==============================================================*/
 .music{
     overflow: hidden;
-    text-align: right;
+    text-align: center;
     height: 85vh;
     background-image: url("../img/IMG_1223@0,2x.gif");
     background-repeat: no-repeat;
